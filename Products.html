@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="products-page">
+
+        <header>
+            <h1>HAPPY STYLES</h1>
+            <nav>
+             <a href="index.html">Home</a>
+                <div class="dropdown">
+                 <a href="products.html" class="dropbtn">Products ▾</a>
+                 <div class="dropdown-content">
+                    <a href="IMAGES/pexels-karolina-grabowska-5717963.jpg" class="category-filter" data-category="Dress">Dresses</a>
+                    <a href="IMAGES/pexels-cottonbro-7610406.jpg" class="category-filter" data-category="skirts">Skirts</a>
+                    <a href="IMAGES/pexels-caleboquendo-3038116.jpg" class="category-filter" data-category="Shoes">Women's Shoes</a>
+                </div>
+              </div>
+              <a href="cart.html">Cart</a>
+            </nav>
+        </header>
+        <br>
+        <main >
+            <section class="product-list" id="Dress">
+             <article class="product">
+                 <h3>Dresses</h3>
+                 <img src="IMAGES/pexels-kwesiblaq-12516058.jpg" alt="Product A" style= "width: 300px; height: 400px;">	
+                 <p>Black Dinner dress.</p>
+                 <p>ksh. 5000</p>
+                 <button onclick="addToCart('Black Dinner dress', 5000)">Add to Cart</button>
+             </article>
+             <br>
+             <article class="product" id="Skirts">
+                 <h3>Skirts</h3>
+                 <img src="IMAGES/pexels-sara-kazemi-2148049458-31400264.jpg" alt="Product B" style="width: 200px; height: 300px;">
+                 <p>An Official Grey Skirt.</p>
+                 <p>Ksh. 500</p>
+                 <button onclick="addToCart('Grey skirt',500)">Add to Cart</button>
+             </article>
+              <br>
+             <article class="product">
+                <h3>High Heel Shoes</h3>
+                <img src="IMAGES/pexels-jibarofoto-2044228.jpg" alt="Product B" style="width: 400px; height: 200px;">
+                <p>Comfortable High Heel Shoes for all occasions.</p>
+                <p>Ksh. 5000</p>
+                <button onclick="addToCart('High Heel Shoes',5000)">Add to Cart</button>
+             </article>    
+             <br>
+             <article class="product" id="shoes">
+                   <h3>Red kitten heels</h3>
+                   <img src="IMAGES/pexels-karolina-grabowska-5713301.jpg" alt="Product C" style="width: 200px; height: 200px;">
+                   <p>Red Kitten heels.</p>
+                   <p>Ksh. 1500</p>
+                   <button onclick="addToCart('Red kitten heels',1500)">Add to Cart</button>
+              </article>
+            </section>
+        </main>
+
+        <footer>
+            <p> 2025 HAPPY STYLES . All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

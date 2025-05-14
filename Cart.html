@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <br>
+  <header>
+     <h1>HAPPY STYLES</h1>
+       <nav>
+         <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="products.html" class="dropbtn">Products ▾</a>
+                <div class="dropdown-content">
+                    <a href="IMAGES/pexels-karolina-grabowska-5717963.jpg" class="category-filter" data-category="Dress">women's Dresses</a>
+                    <a href="IMAGES/pexels-cottonbro-7610406.jpg" class="category-filter" data-category="skirts">Skirts</a>
+                    <a href="IMAGES/pexels-caleboquendo-3038116.jpg" class="category-filter" data-category="shoes">Women's Shoes</a>
+                </div>
+            </div>
+         <a href="cart.html">Cart</a>
+        </nav>
+  </header>
+   <br>
+  <main >
+    <div id="cart-container">
+        <h2>Items in your Cart</h2>
+        <ul id="cart-Items"></ul>
+        <div id="cart-totals">
+          <p>Total Items: <span id="totalQuantity">0</span></p>
+          <p>Total Amount: <span id="totalAmount">Ksh. 0</span></p>
+        </div>
+      </div>
+  </main>
+   <br>
+  <footer>
+     <p> 2025 HAPPY STYLES. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
